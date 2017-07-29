@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -16,9 +15,5 @@
     <OptionsSetting value="true" id="编辑" />
     <ConfirmationsSetting value="0" id="添加" />
     <ConfirmationsSetting value="0" id="移除" />
-=======
-  <component name="ProjectRootManager">
-    <output url="file://$PROJECT_DIR$/out" />
->>>>>>> 5b7a33f4aa46ecbb01840be126f9d93094d779c1
   </component>
 </project>
