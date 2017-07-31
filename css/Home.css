@@ -1,0 +1,70 @@
+#imgBack{
+    width: 100%;
+    height: auto;
+    /*background: #e1e1e1;*/
+}
+#imgBack .imgRoll{
+    width: 80%;
+    height: auto;
+    /*background: #cccccc;*/
+    margin: 0 auto;
+    position: relative;
+
+}
+#imgBack .imgRoll a{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top:225px;
+    z-index: 333;
+}
+#imgBack .imgRoll a.prev{
+    left: 3%;
+    background: url("../images/Logo_purple.png") -200px -100px;
+}
+#imgBack .imgRoll a.next{
+    right: 3%;
+    background: url("../images/Logo_purple.png") -100px -200px;
+}
+#imgBack .imgRoll a.prev:hover{
+    background-position: -200px -200px;
+}
+#imgBack .imgRoll a.next:hover{
+    background-position: -200px -200px;
+}
+#imgBack .imgRoll .roll{
+    width: 100%;
+    height: 500px;
+    /*background: aqua;*/
+    position: relative;
+    overflow: hidden;
+}
+#imgBack .imgRoll .roll img{
+    position: absolute;
+    text-align: center;
+    left: 100%;
+}
+#imgBack .but{
+    width: 10%;
+    height: 25px;
+    /*background: rgba(0,0,0,0.5);*/
+    position: absolute;
+    left: 45%;
+    bottom: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+#imgBack .but span{
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    background: #c4c4c4;
+    border-radius: 7.5px;
+    position: relative;
+    margin: 0 12.5px;
+    top: 5px;
+    }
+#imgBack .but span.hover{
+    background: #ffffff;
+}
