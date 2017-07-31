@@ -1,0 +1,11 @@
+main()
+{
+	print"hello word"
+
+}
+
+metho1()
+{
+	print"my name is czj"
+
+}
