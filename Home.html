@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>赛事Go-首页</title>
+    <link rel="stylesheet" href="css/Home.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-yys-slider.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.js"></script>
+</head>
+<body>
+<!--first part-->
+<div id="imgBack">
+    <!--图片滚动-->
+    <div class="imgRoll">
+        <!--按钮-->
+        <a href="javascript:void(0)" class="prev"></a>
+        <a href="javascript:void(0)" class="next"></a>
+        <!--图片部分-->
+        <div class="roll">
+            <img src="images/Game_poster/poster1.png" style="left: 0">
+            <img src="images/Game_poster/poster2.png">
+            <img src="images/Game_poster/poster3.png">
+        </div>
+        <!--下方按钮-->
+        <div class="but">
+            <span class="hover"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // 底部
+    var _index = 0;
+    var _qindex = 0;
+    var clearTime = null;
+    $(".but span") .mouseover(function(){
+        clearInterval(clearTime);
+        $(this).addClass("hover") .siblings("span").removeClass("hover");
+        _index = $(this) .index();
+        //左移
+        if(_index>_qindex) {
+            $(".roll img").eq(_qindex).animate({"left": "-1536px"}, 300);
+            $(".roll img").eq(_index).css("left","820px").animate({"left": "0px"}, 300);
+        }
+        //右移
+        else if(_index<_qindex){
+            $(".roll img").eq(_qindex).animate({"left": "1536px"}, 300);
+            $(".roll img").eq(_index).css("left","-820px").animate({"left": "0px"}, 300);
+        }
+        _qindex = _index;
+    }).mouseout(function () {
+        autoplay();
+    });
+
+    //左右
+    $(".imgRoll a.next").click(function () {
+        _index++;
+        if(_index>2){
+            _index =0;
+            _qindex =2;
+        }
+        $(".but span").eq(_index).addClass("hover") .siblings("span").removeClass("hover");
+        $(".roll img").eq(_qindex).animate({"left": "-1536px"}, 300);
+        $(".roll img").eq(_index).css("left","820px").animate({"left": "0px"}, 300);
+        _qindex = _index;
+    });
+    $(".imgRoll a.prev").click(function () {
+        _index--;
+        if(_index<0){
+            _index =2;
+            _qindex =0;
+        }
+        $(".but span").eq(_index).addClass("hover") .siblings("span").removeClass("hover");
+        $(".roll img").eq(_qindex).animate({"left": "1536px"}, 300);
+        $(".roll img").eq(_index).css("left","-820px").animate({"left": "0px"}, 300);
+        _qindex = _index;
+    });
+//    自动播放
+
+    autoplay();
+    function autoplay() {
+        clearTime = setInterval(function () {
+            _index++;
+            if(_index>2){
+                _index =0;
+                _qindex =2;
+            }
+            $(".but span").eq(_index).addClass("hover") .siblings("span").removeClass("hover");
+            $(".roll img").eq(_qindex).animate({"left": "-1536px"}, 300);
+            $(".roll img").eq(_index).css("left","820px").animate({"left": "0px"}, 300);
+            _qindex = _index;
+        },3000);
+    };
+
+//    显示/隐藏按钮
+    $(".imgRoll").hover(function () {
+        $("a.prev,a.next").show();
+    },function () {
+        $("a.prev,a.next").hide();
+    })
+</script>
+</html>
