@@ -9,7 +9,7 @@
          float: left;
          margin-left:10.4%;margin-top:18px;width:59px;height:59px;
         }
-       h.title{
+       header .title{
            float: left;margin-left: 1%;margin-top:32px;padding: 0 0;
            font-family: 华文彩云;
            font-size:40px;
@@ -27,8 +27,8 @@
           float: left;
       list-style-type: none;
       position: relative;}
-      nav.menu li a {padding: .25em .25em;font-style: normal;
-          display: block;font-style:微软雅黑;font-weight: bold;font-size: 20px;text-align: left;
+      nav.menu li a {padding: .40px .40px;
+          display: block;font-family: 微软雅黑;font-weight: bold;font-size: 20px;text-align: left;
           text-decoration: none;-webkit-font-smoothing: antialiased;color: black;
       }
       .menu li:hover > a{
@@ -42,15 +42,15 @@
            float: left;margin-left:25px;margin-top:50px;width: 20px;height: 20px;
        }
         form.search{
-            float: left;margin-left:48px;
+            float: left;
             margin-left:18px;margin-top:45px;
         }
         .search input{
-            float: left;margin-left:48px;
+            float: left;
             margin-left:-10px;width:100px;height:1.5em;
             padding:4px 4px 4px 4px;
             border-radius:20px 20px 20px 20px;
-            font-family:微软雅黑;
+            font-family: 微软雅黑;
             font-weight:100;
             font-size: 12px;
             color:#cccccc;
@@ -58,7 +58,7 @@
         }
         .search input:focus{ width:100px;}
         .search label{display:none;}
-        former input:focus{background-color:#fff;}
+        form input:focus{background-color:#fff;}
 
         figure li{
             list-style: none;float: left;
@@ -66,15 +66,14 @@
         }
          figure{
              float: left;
-             margin-left:10px;
-             width:50px;height:50px;margin: 0px 0px;border: hidden;position: relative;padding: 0 0;
+             width:50px;height:50px;margin: 0 0;border: hidden;position: relative;padding: 0 0;
          }
 
      figure.click{
-         width:50px;height: 50px;margin: 0px 0px;border: hidden;position: relative;padding: 0 0;
+         width:50px;height: 50px;margin: 0 0;border: hidden;position: relative;padding: 0 0;
          float: left;
      }
-      img{display: block;width:30px;height:30px;margin-top:18px;margin-left:350px;margin-top:40px;
+      img{display: block;width:30px;height:30px;margin-left:350px;margin-top:40px;
         }
      img.information {display: block;width:35px;height:23px;margin-top:43px;
      }
@@ -82,12 +81,12 @@
             display: none;position: absolute;
             left:350px;top: 72px;background: white;width: 150px;height: 150px;
             border: .6px solid #cccccc;
-        padding:0px 0px;box-shadow: #cccccc}
+        padding:0 0;box-shadow: #cccccc}
         figure:hover figcaption{
             display: block;}
             figcaption a{
-                display: block;display: block;padding: 0px 0px;font-style: normal;
-                font-family:微软雅黑;float: left;text-align:left;
+                display: block;padding: 0 0;font-style: normal;
+                font-family: 微软雅黑;float: left;text-align:left;
                 font-weight:200;
                 font-size: 18px;color: #cccccc;
                 text-decoration: none;
@@ -96,10 +95,10 @@
     </style>
 </head>
 <body>
-<head>
+<header>
     <div>
-        <img  class="logo" src="logo.jpg" alt="赛事go" >
-       <h class="title">赛事go</h>
+        <img  class="logo" src="images/logo.jpg" alt="赛事go" >
+       <header class="title">赛事go</header>
        <nav class="menu">
         <ul >
             <li class="choice1"><a href="#">发起比赛</a></li>
@@ -108,13 +107,13 @@
         </ul>
        </nav>
 
-        <img  class="search" src="search.jpg" alt="赛事go" >
-       <label> <form class="search" action="#" method="post">
+        <img  class="search" src="images/search.jpg" alt="赛事go" >
+       <form class="search" action="#" method="post">
            <label for="user_name">搜索赛事或内容</label>
            <input type="text" id="user_name" name="user_name" placeholder="搜索赛事或内容"/>
-       </form></label>
+       </form>
     <figure>
-        <img src="me.jpg"/>
+        <img width="me" src="images/me.jpg"/>
         <figcaption>
             <ul>
                 <li class="choice1"><a href="#">个人资料</a></li>
@@ -124,7 +123,7 @@
         </figcaption>
     </figure>
         <figure class="click">
-            <img  class="information" src="information.jpg"/>
+            <img  class="information" src="images/information.jpg"/>
             <figcaption>
                 <ul>
                     <li class="choice1"><a href="#">私信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
@@ -136,6 +135,6 @@
 
     </div>
 
-</head>
+</header>
 </body>
 </html>
