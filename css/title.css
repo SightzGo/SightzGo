@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+}
+#imgBack{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin: 80px auto;
+}
+#imgBack .imgRoll{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+#imgBack .imgRoll a{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top:225px;
+    z-index: 33;
+}
+#imgBack .imgRoll a.prev{
+    left: 3%;
+    background: url("../images/Logo_purple.png") -200px -100px;
+}
+#imgBack .imgRoll a.next{
+    right: 3%;
+    background: url("../images/Logo_purple.png") -100px -200px;
+}
+#imgBack .imgRoll a.prev:hover{
+    background-position: -200px -200px;
+}
+#imgBack .imgRoll a.next:hover{
+    background-position: -200px -200px;
+}
+#imgBack .imgRoll .roll{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#imgBack .imgRoll .roll img{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    left: 100%;
+}
+#imgBack .but{
+    width: auto;
+    height: 25px;
+    position: absolute;
+    left: 45%;
+    bottom: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+#imgBack .but span{
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    background: #c4c4c4;
+    border-radius: 7.5px;
+    position: relative;
+    margin: 0 12.5px;
+    top: 5px;
+    }
+#imgBack .but span.hover{
+    background: #ffffff;
+}
+#caseBack{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin: 600px auto;
+}
+#caseBack a{
+    display: block;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: black;
+    text-decoration:none
+}
+#caseBack a:hover{
+    color: #cccccc;
+}
+#caseBack .caseShow{
+    width: 80%;
+    height: 520px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#caseBack .caseShow .caseImg{
+    margin: 10px 0;
+}
+#caseBack .caseShow .caseImg img.big{
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+#caseBack .caseShow .caseImg img.middle{
+    width: 40%;
+    height: 250px;
+    float: left;
+}
+#caseBack .caseShow .caseImg img.small{
+    position: absolute;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+ header{
+          /*  position: fixed;*/
+            z-index: 99;
+            width: 100%;
+            height: 80px;
+            background: rgb(255,255,255);
+        }
+        #header{
+            display: block;
+            width: 100%;
+            height: auto;
+            background: rgb(255,255,255);
+        }
+        img.logo{
+            position: relative;
+            left: 15%;
+            float: left;
+            width:60px;
+            height:60px;
+            bottom: -10px;
+        }
+        header .title{
+            position: absolute;
+            vertical-align: middle;
+            left: 20%;
+            float: left;
+            font-family: 华文彩云;
+            font-size:40px;
+            color: #000000;
+            outline: none;
+            bottom: -20px;
+            background: rgba(0,0,0,0)
+        }
+        nav.menu{
+            position: relative;
+            z-index: 9999;
+            left: 25%;
+            float: left;
+            width: 30%;
+            margin:0 1%;
+            text-align:left;
+            font-size:12px;
+            bottom: -25px;
+        }
+        nav,menu ul {
+            display: block;
+        }
+        nav.menu li{
+            margin: 0 5%;
+            float: left;
+            list-style-type: none;
+        }
+        nav.menu li a {
+            display: block;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+            text-decoration: none;
+            color: black;
+        }
+        nav.menu li:hover a{
+            background-color: #000000;
+            color:rgb(255,255,255) ;
+        }
+        label{
+            float: left;
+        }
+        img.search{
+            position: relative;
+            z-index: 9999;
+            left: 30%;
+            float: left;
+            width: 20px;
+            height: 20px;
+            bottom: -28px;
+        }
+        form.search{
+            position: relative;
+            z-index: 99999;
+            left: 30%;
+            float: left;
+            bottom: -20px;
+        }
+        .search input{
+            float: left;
+            left: 65%;
+            width: 200px;
+            height:30px;
+            border-radius:20px;
+            font-family: 微软雅黑;
+            font-weight:200;
+            font-size: 12px;
+            color:#cccccc;
+            outline:none;
+        }
+        .search input:focus{
+            width:200px;
+        }
+        .search label{display:none;}
+        form input:focus{background-color: #ffffff;}
+        figure li{
+            list-style: none;
+            margin: 15px;
+        }
+        figure{
+            position: relative;
+            z-index: 9999;
+            left: 30%;
+            float: left;
+            width:50px;
+            height:50px;
+            border: hidden;
+            bottom: -20px;
+
+        }
+        figure.click{
+            width:50px;
+            height: 50px;
+            border: hidden;
+            position: relative;
+            float: left;
+        }
+        img.me{
+            display: block;
+            width:30px;
+            height:30px;
+        }
+        img.information {
+            display: block;
+            width:30px;
+            height:30px;
+        }
+        figcaption{
+            display: none;
+            position: absolute;
+            left:0;
+            top: 100%;
+            background: white;
+            width: 150px;
+            height: 150px;
+            border: .6px solid #cccccc;
+            box-shadow: #cccccc}
+        figure:hover figcaption{
+            display: block;}
+        figcaption a{
+            display: block;
+            font-style: normal;
+            font-family: 微软雅黑;
+            float: left;
+            text-align:left;
+            font-weight:200;
+            font-size: 18px;
+            color: #cccccc;
+            text-decoration: none;
+            outline:none;
+        }

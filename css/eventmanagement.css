@@ -1,0 +1,99 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.table {
+	width: 80%;
+	height: 498px;
+	border: 1px solid #eee;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	left:10%;
+	margin-top: 80px; 
+	font-size: 20px;
+}
+.table-title{
+	/*padding-top: 0px;*/
+	width: 10%;
+	height: 498px;
+	position: relative;
+	background: #f7f7f7;
+}
+.table-title ul{
+	position: absolute;
+	width: 100%;
+	height: 501px;
+	top:-1;
+}
+.table-title li{
+	height: 99px;
+	line-height: 99px;
+	border-right: 1px solid #eee; 
+	overflow: hidden;
+}
+.table-title li a:link,.tab li a:visited,.works a:link,.work a:visited{
+    text-decoration: none;
+    text-align:center;
+    color: black;
+    font-weight: 650;
+	vertical-align:middle;
+	margin-right: 19px;
+}
+.table-title li a:hover{
+    color:#f90;
+    font-weight: 700;
+}
+
+.table-title li.select{
+    background: #fff;
+    border-right-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 0;
+}
+
+.content{
+	width: 90%;
+	height: 500px;
+/*	left: 80%;*/
+	display: block;
+	background-color: #fff;
+	position: relative;
+
+}
+
+.entersys{
+	margin: 60px;
+	position: relative;
+}
+
+.entersys-pic{
+	width:200px;
+	margin: 30px;
+}
+
+.content p{
+	margin-top: 50px;
+	margin-left: 150px;
+	font-size: 50px;
+	font-weight: 700;
+ }
+
+.content img{
+	padding: 10px,10px,15px;
+	background: white;
+	border:1px solid #ddd;
+	box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+	z-index: 1;
+	
+}
+
+.content img:hover{
+	box-shadow: 15px,15px,20px rgba(50,50,50,0.4);
+	z-index: 2;
+	transform: scale(1.80);
+	-webkit-transform:scale(1.80);
+}
