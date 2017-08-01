@@ -46,11 +46,11 @@ img.logo{
 }
 #header .nav ul li{
     list-style-type: none;
-    padding: 0 3%;
+    padding: 0 5%;
     float: left;
 }
 #header .nav ul li a{
-    font-size: 18px;
+    font-size: 125%;
     text-decoration: none;
     font-family: "Microsoft YaHei UI";
 }
