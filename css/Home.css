@@ -1,23 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #002d54;
+    height: auto;
+}
+a{
+    color: #002d54;
+    text-decoration: none;
+}
+/*图片滚动*/
 #imgBack{
     width: 100%;
     height: auto;
-    /*background: #e1e1e1;*/
+    margin: auto;
 }
 #imgBack .imgRoll{
     width: 80%;
     height: auto;
-    /*background: #cccccc;*/
     margin: 0 auto;
     position: relative;
-
 }
 #imgBack .imgRoll a{
     width: 50px;
     height: 50px;
     display: block;
-    position: absolute;
+    position:absolute;
     top:225px;
-    z-index: 333;
+    z-index: 33;
 }
 #imgBack .imgRoll a.prev{
     left: 3%;
@@ -36,19 +47,19 @@
 #imgBack .imgRoll .roll{
     width: 100%;
     height: 500px;
-    /*background: aqua;*/
     position: relative;
     overflow: hidden;
 }
 #imgBack .imgRoll .roll img{
+    width: 100%;
+    height: 500px;
     position: absolute;
     text-align: center;
     left: 100%;
 }
 #imgBack .but{
-    width: 10%;
+    width: auto;
     height: 25px;
-    /*background: rgba(0,0,0,0.5);*/
     position: absolute;
     left: 45%;
     bottom: 5px;
@@ -68,3 +79,58 @@
 #imgBack .but span.hover{
     background: #ffffff;
 }
+/*图片滚动*/
+
+/*案例墙*/
+#caseBack{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    float: left;
+    margin: 10px auto 0 auto;
+}
+#caseBack a{
+    display: block;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration:none
+}
+#caseBack a:hover{
+    color: #cccccc;
+}
+#caseBack .caseShow{
+    width: 80%;
+    height: 520px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#caseBack .caseShow .caseImg{
+    z-index: 1;
+    margin: 10px 0;
+    position: absolute;
+}
+#caseBack .caseShow .caseImg img.big{
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+#caseBack .caseShow .caseImg img.middle{
+    width: 40%;
+    height: 250px;
+    float: left;
+}
+#caseBack .caseShow .caseImg img.small{
+    position: relative;
+    width: 20%;
+    height: 500px;
+    clear: both;
+}
+#caseBack .caseShow .caseImg img:hover{
+    z-index: 2;
+    transform: scale(0.95,0.95);
+    overflow: visible;
+}
+/*案例墙*/
