@@ -58,20 +58,39 @@ public class AddUser extends HttpServlet {
         request.setCharacterEncoding("utf-8"); 
         
 //得到数据
+        int success=0;
+        
+        
+  /*    String loginname = request.getParameter("loginname"); 
+        if(loginname==null) success=2;    
+        String password = request.getParameter("password"); 
+        if(password==null) success=3;     
+        String type=request.getParameter("type");   
+        if(type==null) success=4;
+        */
+      
         String loginname = request.getParameter("loginname"); 
-        String password = request.getParameter("password");  
-        String type=request.getParameter("type");         
+        if(loginname=="") success=2;    
+        String password =request.getParameter("password"); 
+        if(password=="") success=3;     
+        String type=request.getParameter("type");   
+        if(type=="") success=4;
+        
         Date currentdate = new Date();  
         String date = new SimpleDateFormat("yyyy-MM-dd").format(currentdate);
-//执行操作        
+        
+//执行操作   
+        if(success==0)
+        {
         User u=new User(0,loginname,password,type,"1",date);
         UserDao ud = new UserDaoImpl(); 
-        int success=ud.addUser(u);
+        success=ud.addUser(u);
+        }
      
         JSONObject jsonObj=new JSONObject();
         jsonObj.accumulate("success", success);
         PrintWriter out = response.getWriter();
-        out.println(jsonObj.toString());
+        out.print(jsonObj);
         
 
 	}
