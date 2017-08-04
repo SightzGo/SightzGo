@@ -1,0 +1,51 @@
+div.launch{position: relative;
+    float: left;width: 100%;padding:0;margin-bottom: 500px;}
+div.choice{
+    position:absolute;left:0px;top:50px;padding:0;width:50%;margin-bottom: 80px;
+}
+div.choice>ul{display: inline-block;  }
+div.choice li{float: left;
+    list-style-type: none;position: relative;left: 500px;top:100px;background: white;margin-bottom: 160px;}
+div.choice li a {
+    display: block;margin: 0px;padding:30px;font-family: 微软雅黑;font-style: normal;font-weight: 300;
+    font-size:40px ;text-align: center;color: black;text-decoration: none;
+}
+div.choice li:hover > a{
+    background-color:#002d54;
+    color:rgb(255,255,255) ;
+}
+div.third{
+   background-color: white;margin:0;padding:0px;position:absolute;top:50px;left:400px;
+    width: 30%;height: 480px;
+}
+img.row{
+    float: left;width: 100%;height: 60px;
+}
+div.text{
+    position:relative;float:left;top:30px;margin:0;padding:0;width:30%
+}
+div.text p {
+    float:right;
+}
+div.infor{
+    position:relative;float:left;left:30px;top:30px;margin:0;padding:0;width:50%
+}
+div.four{
+    background-color: white;margin:0;padding:0px;float:left;position:absolute;
+    width: 30%;top:50px;left:400px;height: 480px;
+}
+div.five{
+    background-color: white;margin:0;padding:0px;float:left;position:absolute;
+    width: 30%;top:50px;left:400px;height: 480px;
+}
+img.ok{
+    width: 30%;margin-left: 130px;margin-top: 80px;
+}
+div.read{
+    float: left;margin-left:80px;margin-top: 40px;
+}
+#div1{display:block;}
+#div2{display: none;}
+#div3{display: none;}
+#div4{display: none;}
+
