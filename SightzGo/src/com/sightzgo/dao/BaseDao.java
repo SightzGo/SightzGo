@@ -19,8 +19,8 @@ public class BaseDao {
  
     public void getConnection() {  
         try {  
-            Class.forName(DRIVER); //注册数据库
-            conn = DriverManager.getConnection(URL, USER, PASSWORD); //建立连接
+            Class.forName(DRIVER); 
+            conn = DriverManager.getConnection(URL, USER, PASSWORD); 
         } catch (ClassNotFoundException e) {  
             e.printStackTrace();  
         } catch (SQLException e) {  

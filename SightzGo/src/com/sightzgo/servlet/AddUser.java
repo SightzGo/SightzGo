@@ -29,7 +29,7 @@ import com.sightzgo.entity.User;
 /**
  * Servlet implementation class AddUserServlet
  */
-@WebServlet("/AddUserServlet")
+//@WebServlet("/AddUserServlet") web.xml和注解只能二选一，不然会冲突
 public class AddUser extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -53,15 +53,25 @@ public class UserDaoImpl extends BaseDao  implements  UserDao {
 	@Override
 	public int updateUser(int id) {
 		// TODO Auto-generated method stub
+
 		return 0;
 	}
 
 
 
 	@Override
-	public int findUserId(String name, String password) {
+	public int findUserId(String loginname, String password) {
 		// TODO Auto-generated method stub
-		return 0;
+		int id=0;//=0时不存在该用户
+		String sql="select id from user where loginname=? and password=? ";
+		try{
+			rs=executeQuery(sql,loginname,password);
+			if (rs.next())
+			{id=rs.getInt(1);}
+		}catch (Exception e) {  
+            e.printStackTrace();  
+        }  		
+		return id;
 	}
 
 
@@ -90,6 +100,31 @@ public class UserDaoImpl extends BaseDao  implements  UserDao {
          }  
          
          return userlist;  
+	}
+
+
+
+	@Override
+	public int findUserName(String loginname) {
+		// TODO Auto-generated method stub
+		int success=0;//=0时不存在该用户
+		String sql="select id from user where loginname=? ";
+		try{
+			rs=executeQuery(sql,loginname);
+			if (rs.next())
+			{success=1;}
+		}catch (Exception e) {  
+            e.printStackTrace();  
+        }  		
+		return success;
+	}
+
+
+
+	@Override
+	public int findUserPassword(String loginname) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	
