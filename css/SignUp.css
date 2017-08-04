@@ -77,9 +77,18 @@ body{
     width: 100%;
     position: relative;
     margin: 1.5vw auto 0 auto;
+    z-index: 3;
 }
 #table .tableBack .input form span{
-    display: none;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 1vw;
+    padding: 2vw 0;
+    line-height: 2vw;
+    overflow: visible;
+    color: white;
+    z-index: -1;
 }
 form input{
     width: 20vw;
@@ -108,27 +117,39 @@ form input{
     color:white;
     display: inline-block;
     float: left;
-    margin: 1vw 5vw;
+    margin: 0 5vw 1vw 5vw;
     font-size: 1vw;
 }
 #table .tableBack .input span a {
     color: white;
 }
 #table .tableBack .input .type span{
-    margin: 0 0 0 5vw;
+    margin: 1vw 0 0 5vw;
     font-size: 1vw;
     color:white;
     float: left;
 }
+#table .tableBack .input #checktext4{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 4.5vw;
+    padding: 0;
+    color: white;
+}
 #table .tableBack .input .type span.spoText{
-    margin: 0 1vw;
+    margin: 1vw;
 }
 #table .tableBack .input .type span.conText{
-    margin: 0 1vw;
+    margin: 1vw;
 }
 #table .tableBack .next{
     width: 100%;
     text-align: center;
+}
+#table .tableBack .next input:active{
+    transform: scale(0.98,0.98);
+    overflow: hidden;
 }
 .next input{
     height: 2.5vw;
