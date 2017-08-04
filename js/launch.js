@@ -27,7 +27,6 @@ window.onload = function(){
     //var z=$("#z");
     //var x=$("#x");
     //var v=$('#v');
-    alert("我来了");
     z.onclick = function(){ $("#div2").show();}
     x.onclick = function(){ $("#div3").show();}
     v.onclick = function(){ $("#div4").show();}
