@@ -56,7 +56,11 @@
             }
             return check;
         }
-
+        function check() {
+            var check = true;
+            check = checkName() && checkPassword() && checkpasswordConfirm() && checkcCheck();
+            return check;
+        }
         function test(){
                 /*var password1 = document.getElementById("password");
                 var passwordConfirm = document.getElementById("passwordConfirm");
@@ -66,6 +70,7 @@
                     if(password1.value !== passwordConfirm.value)
                     alert("对不起，您2次输入的密码不一致");
                 else{*/
+                if(check() === true){
                     var loginname=document.getElementById("loginname").value;
                     var password=document.getElementById("password").value;
                     var types=document.getElementsByName("type");
@@ -96,7 +101,7 @@
                 error:function(){
                     alert("error");
                 }
-            })
+            })}
         }
     </script>
 </head>
@@ -115,7 +120,7 @@
         </div>
         <div class="input">
             <p>注册</p><hr/>
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return check()">
                 <input type="email" placeholder="请输入您的邮箱" id="loginname" onblur="checkName()"><span id="checktext1"></span>
                 <input type="password" placeholder="6~32位密码" maxlength="32" id="password" onblur="checkPassword()"><span id="checktext2"></span>
                 <input type="password" placeholder="确认密码" maxlength="32" id="passwordConfirm" onblur="checkpasswordConfirm()"><span id="checktext3"></span>
