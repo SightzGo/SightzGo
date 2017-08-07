@@ -82,7 +82,7 @@
                 }
                 $.ajax({
                     type:"post",
-                    url:"/SightzGo/AddUser",
+                    url:"/SightzGo/AddUserServlet",
                     cache: false,
                     data:{loginname:loginname,password:password,type:type},//传参
                     dataType: "json",   //返回值类型
@@ -126,8 +126,8 @@
             </form>
             <div class="type">
                 <span>选择成为：</span>
-                <span class="spoText"><input type="radio" name="type" class="sponsor" value="1">主办方</span>
-                <span class="conText"><input type="radio" name="type" class="contestant " value="2" checked>参赛者</span>
+                <span class="spoText"><input type="radio" name="type" class="sponsor" value="1" checked>主办方</span>
+                <span class="conText"><input type="radio" name="type" class="contestant " value="2">参赛者</span>
             </div>
             <span>
                 <input type="checkbox" class="check" name="checkbox" checked="checked" onchange="checkcCheck()">我已阅读并同意<a href="">《赛事GO服务条款》</a>
