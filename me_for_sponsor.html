@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>我的-主办方</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript">
+        function showed(){
+            $.ajax({
+                type: "post",
+                url: "/SightzGo/FindHostByIdServlet",
+                cache: false,
+                data: {},//传参
+                dataType: "json",   //返回值类型
+                success:function(data){
+                    $.each(data,function(index,item){
+                        var companyname=item.companyname;
+                        var mainbusiness=item.mainbusiness;
+                        var managername=item.managername;
+                        var telephone=item.telephone;
+                        var email=item.email;
+                        var wechat=item.wechat;
+                        var province=item.province;
+                        var city=item.city;
+                        var district=item.district;
+                        document.getElementById("companyname").setAttribute("value",companyname);
+                        document.getElementById("mainbusiness").setAttribute("value",mainbusiness);
+                        document.getElementById("managername").setAttribute("value",managername);
+                        document.getElementById("telephone").setAttribute("value",telephone);
+                        document.getElementById("email").setAttribute("value",email);
+                        document.getElementById("wechat").setAttribute("value",wechat);
+                        document.getElementById("province").setAttribute("value",province);
+                        document.getElementById("city").setAttribute("value",city);
+                        document.getElementById("district").setAttribute("value",district);
+                    })
+                },
+                error:function(XMLHttpRequest,textStatus,errorThrown){
+                    alert("error");
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textState);
+                }
+            })
+        }
+    </script>
+</head>
+<body onload="showed()">
+<h1>个人资料</h1>
+
+<p><h4>个人头像</h4></p>
+<input type="file" name="head" class="head" accept="image/*">
+
+<p><h4>基本资料</h4></p>
+<p>姓名：<span id="managername"></span></p>
+<p>公司/组织名称：<span id="companyname"></span></p>
+<p>营业执照<br>或其他证明文件：<input type="file" name="" class="" accept="image/*"><input type="file" name="" class="" accept="image/*"></p>
+<p>主营业务：<span id="mainbusiness"></span></p>
+<p>省份：<span id="province"></span></p>
+<p>城市：<span id="city"></span></p>
+<p>区：<span id="district"></span></p>
+<p>邮箱：<span id="email"></span></p>
+<p>微信号：<span id="wechat"></span></p>
+<p>联系电话：<span id="telephone"></span></p>
+<input type="button" name="" class="" value="编辑">
+</body>
+</html>
