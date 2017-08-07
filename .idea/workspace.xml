@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faefb566-64aa-4bf7-bb94-605e5fb0a193" name="Default" comment="字体大小修改">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/me_for_sponsor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/me_for_sponsor_edit.html" />
+    <list default="true" id="faefb566-64aa-4bf7-bb94-605e5fb0a193" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SignIn.html" afterPath="$PROJECT_DIR$/SignIn.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SignUp.html" afterPath="$PROJECT_DIR$/SignUp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/SignUp.css" afterPath="$PROJECT_DIR$/css/SignUp.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,10 +24,10 @@
       <file leaf-file-name="SignUp.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SignUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding>
-                <element signature="e#2243#2633#0" expanded="false" />
+                <element signature="e#2244#2634#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,6 +100,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="17/8/7" />
+      </map>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -130,12 +131,12 @@
         <option value="$PROJECT_DIR$/X.html" />
         <option value="$PROJECT_DIR$/SignIn(2).html" />
         <option value="$PROJECT_DIR$/css/SignUp.css" />
-        <option value="$PROJECT_DIR$/SignUp.html" />
         <option value="$PROJECT_DIR$/Me.html" />
         <option value="$PROJECT_DIR$/SignIn.html" />
         <option value="D:/Documents/WeChat Files/DULALG76b/Files/test.html" />
         <option value="$PROJECT_DIR$/me_for_sponsor_edit.html" />
         <option value="$PROJECT_DIR$/me_for_sponsor.html" />
+        <option value="$PROJECT_DIR$/SignUp.html" />
       </list>
     </option>
   </component>
@@ -324,7 +325,7 @@
       <workItem from="1501930767951" duration="47000" />
       <workItem from="1502065643490" duration="10064000" />
       <workItem from="1502085168070" duration="4292000" />
-      <workItem from="1502089684550" duration="16140000" />
+      <workItem from="1502089684550" duration="16243000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1501578347659</created>
@@ -375,14 +376,22 @@
       <option name="project" value="LOCAL" />
       <updated>1502074416061</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="字体大小修改">
+      <created>1502107141975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1502107141975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103386000" />
+    <option name="totallyTimeSpent" value="103489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -396,7 +405,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -458,12 +467,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0801" />
-    <MESSAGE value="字体大小修改" />
     <MESSAGE value="17/8/4判断用户输入提醒" />
     <MESSAGE value="8/5" />
     <MESSAGE value="提示修改" />
     <MESSAGE value="17/8/7" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/8/7" />
+    <MESSAGE value="字体大小修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="字体大小修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -477,7 +486,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2243#2633#0" expanded="false" />
+            <element signature="e#2244#2634#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,7 +503,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2243#2633#0" expanded="false" />
+            <element signature="e#2244#2634#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -532,7 +541,7 @@
         <state relative-caret-position="616">
           <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
-            <element signature="e#2243#2633#0" expanded="false" />
+            <element signature="e#2244#2634#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -825,10 +834,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
-            <element signature="e#2243#2633#0" expanded="false" />
+            <element signature="e#2244#2634#0" expanded="false" />
           </folding>
         </state>
       </provider>
